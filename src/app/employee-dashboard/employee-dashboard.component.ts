@@ -96,7 +96,8 @@ export class EmployeeDashboardComponent implements OnInit {
       this.formValue.reset();
       this.getAllEmployee();
     })
-  }
+"hello";
+}
 
   totalLength : any;
   page : number = 1;

@@ -6,5 +6,3 @@ export class EmployeeModel{
     mobile : string = '';
     salary : string = '';
 }
-
-"hello";

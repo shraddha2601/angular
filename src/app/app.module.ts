@@ -10,13 +10,15 @@ import { SignupComponent } from './signup/signup.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { SignUpUserComponent } from './sign-up-user/sign-up-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeDashboardComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SignUpUserComponent
   ],
   imports: [
     BrowserModule,

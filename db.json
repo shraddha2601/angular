@@ -1,0 +1,121 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "firstName": "jinal",
+      "lastName": "mistry",
+      "email": "jinal@gmail.com",
+      "mobile": "85236985",
+      "salary": "2500"
+    },
+    {
+      "id": 4,
+      "firstName": "sdf",
+      "lastName": "sadf",
+      "email": "dsafsadf",
+      "mobile": "423523452435",
+      "salary": "435"
+    },
+    {
+      "id": 5,
+      "firstName": "sdf",
+      "lastName": "sdf",
+      "email": "asd@gmail.com",
+      "mobile": "2563214210",
+      "salary": "250"
+    },
+    {
+      "id": 6,
+      "firstName": "bhumi",
+      "lastName": "chauhan",
+      "email": "b@gmail.com",
+      "mobile": "8521478521",
+      "salary": "1200"
+    },
+    {
+      "id": 7,
+      "firstName": "shraddha",
+      "lastName": "gediya",
+      "email": "s@gmail.com",
+      "mobile": "3698521470",
+      "salary": "100"
+    },
+    {
+      "id": 8,
+      "firstName": "jinal",
+      "lastName": "mistry",
+      "email": "jinal@gmail.com",
+      "mobile": "85236985",
+      "salary": "25000"
+    },
+    {
+      "id": 9,
+      "firstName": "ronak",
+      "lastName": "kadiya",
+      "email": "r@gmail.com",
+      "mobile": "2563214563",
+      "salary": "2500"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "shraddha gediya",
+      "email": "s@gmail.com",
+      "password": "admin",
+      "mobile": "9999999999",
+      "id": 1
+    },
+    {
+      "fullname": "bhumi",
+      "email": "bhumi@gmail.com",
+      "password": "123456789",
+      "mobile": "5555555555",
+      "id": 2
+    },
+    {
+      "fullname": "ronak",
+      "email": "r@gmail.com",
+      "password": "123",
+      "mobile": "7412589632",
+      "id": 3
+    },
+    {
+      "fullname": "ronak",
+      "email": "r@gmail.com",
+      "password": "123",
+      "mobile": "7412589632",
+      "id": 4
+    },
+    {
+      "fullname": "shraddha gediya",
+      "email": "s@gmai.com",
+      "password": "123",
+      "mobile": "9999999999",
+      "id": 5
+    },
+    {
+      "fullname": "shraddha gediya",
+      "email": "s@gmai.com",
+      "password": "123",
+      "mobile": "9999999999",
+      "id": 6
+    },
+    {
+      "fullname": "shraddha gediya",
+      "email": "s@gmail.com",
+      "password": "123",
+      "mobile": "999999999999999",
+      "id": 7
+    },
+    {
+      "fullname": "shraddha gediya",
+      "email": "s@gmail.com",
+      "password": "123",
+      "mobile": "999999999999999",
+      "id": 8
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

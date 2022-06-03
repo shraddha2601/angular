@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 })
 export class ApiService {
 
+   Email:string="";
   constructor(private http : HttpClient) { }
 
   postEmploye(data : any){
@@ -31,6 +32,37 @@ export class ApiService {
 
   deleteEmploye(id:number){
     return this.http.delete<any>("http://localhost:3000/posts/"+id)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+
+// for signup list
+
+  postUsers(data : any){
+    return this.http.post<any>("http://localhost:3000/signupUsers" , data)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  getUsers(){
+    return this.http.get<any>("http://localhost:3000/signupUsers")
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  updateUsers(data : any,id:number){
+    return this.http.put<any>("http://localhost:3000/signupUsers/"+id , data)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  deleteUsers(id:number){
+    return this.http.delete<any>("http://localhost:3000/signupUsers/"+id)
     .pipe(map((res:any)=>{
       return res;
     }))

@@ -1,8 +1,8 @@
-<!-- <nav class="navbar navbar-light bg-primary">
+<nav class="navbar navbar-light bg-primary">
     <div class="container-fluid">
         <h1>Angular crud</h1>
         <div class="d-flex">
-          <button type="button" (click)="clickAddEmploye()" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Add Employee</button>
+          <!-- <button type="button" (click)="clickAddEmploye()" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Add Employee</button> -->
           <button routerLink="/login" class="btn btn-success">Logout</button>
         </div>
     </div>
@@ -10,26 +10,24 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Employee Id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Id</th>
+            <th>Full Name</th>
             <th>Email Id</th>
+            <th>Password</th>
             <th>Mobile no.</th>
-            <th>Salary</th>
             <th>Action</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let row of employeeData">
+        <tr *ngFor="let row of signUpdata">
             <td>{{row.id}}</td>
-            <td>{{row.firstName}}</td>
-            <td>{{row.lastName}}</td>
+            <td>{{row.fullname}}</td>
             <td>{{row.email}}</td>
+            <td>{{row.password}}</td>
             <td>{{row.mobile}}</td>
-            <td>{{row.salary}}</td>
             <td>
-                <button (click)="onEdit(row)" class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                <button (click)="deleteEmployee(row)" class="btn btn-danger mx-3">Delete</button>
+                <button (click)="onEditUser(row)" class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                <button (click)="deleteUser(row)" class="btn btn-danger mx-3">Delete</button>
             </td>
         </tr>
     </tbody>
@@ -48,34 +46,30 @@
         <div class="modal-body">
             <form [formGroup] = "formValue">
                 <div class="form-group">
-                  <label for="first_name">First Name</label>
-                  <input type="text" formControlName="firstName" class="form-control" id="first_name">
-                </div>
-                <div class="form-group">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" formControlName="lastName" class="form-control" id="last_name">
+                  <label for="full_name">Full Name</label>
+                  <input type="text" formControlName="fullname" class="form-control" id="full_name">
                 </div>
                 <div class="form-group">
                     <label for="email_id">Email Id</label>
                     <input type="email" formControlName="email" class="form-control" id="email_id">
                 </div>
                 <div class="form-group">
+                    <label for="pw">Password</label>
+                    <input type="text" formControlName="password" class="form-control" id="pw">
+                </div>
+                <div class="form-group">
                     <label for="mobile_no">Mobile Number</label>
                     <input type="text" formControlName="mobile" class="form-control" id="mobile_no">
                 </div>
-                <div class="form-group">
-                    <label for="salary">Salary</label>
-                    <input type="text" formControlName="salary" class="form-control" id="salary">
-                </div>
+               
                 
             </form>
         </div>
         <div class="modal-footer">
           <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" *ngIf="showAdd" (click)="postEmployeeDetails()" class="btn btn-primary">Add</button>
-          <button type="button" *ngIf="showUpdate" (click)="updateEmployeeDetails()" class="btn btn-primary">Update</button>
+          <!-- <button type="button" (click)="postUserDetails()" class="btn btn-primary">Add</button> -->
+          <button type="button" (click)="updateUserDetails()" class="btn btn-primary">Update</button>
         </div>
       </div>
     </div>
-  </div> -->
-<p>xf</p>
+  </div>

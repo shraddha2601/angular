@@ -10,16 +10,17 @@ import { EmployeeModel } from './employee-dashboard.model';
 })
 export class EmployeeDashboardComponent implements OnInit {
 
-  searchText : any;
+  // searchText : any;
+  firstName : any;
+  p: number= 1;
 
   // data: Array<any>
   // totalRecords : any
   // page : Number = 1
 
-
   formValue !: FormGroup;
   employeeModelObj : EmployeeModel = new EmployeeModel();
-  employeeData !: any;
+  employeeData !: any;  
   showAdd !: boolean;
   showUpdate !: boolean;
   constructor(private formbuilder: FormBuilder,
@@ -107,6 +108,27 @@ export class EmployeeDashboardComponent implements OnInit {
       this.formValue.reset();
       this.getAllEmployee();
     })
+  }
+
+  search(){
+    if (this.firstName == "") {
+      this.ngOnInit();
+    }
+    else{
+      this.employeeData = this.employeeData.filter((res: { firstName: string; }) => {
+        return res.firstName.toLocaleLowerCase().match(this.firstName.toLocaleLowerCase());
+      })
+    }
+  }
+
+  
+
+  key : string = "id";
+  reverse : boolean = false ;
+
+  sort(key : any){
+    this.key = key;
+    this.reverse = !this.reverse;
   }
 }
 

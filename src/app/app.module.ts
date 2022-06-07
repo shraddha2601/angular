@@ -15,6 +15,7 @@ import { SignUpUserComponent } from './sign-up-user/sign-up-user.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { Ng2OrderModule } from 'ng2-order-pipe';
 
 @NgModule({
   declarations: [
@@ -32,8 +33,10 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
-    NgxPaginationModule, FormsModule,
-    Ng2SearchPipeModule
+    FormsModule,
+    Ng2SearchPipeModule,
+    NgxPaginationModule,
+    Ng2OrderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

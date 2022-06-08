@@ -77,6 +77,20 @@
       "email": "s@gmai.com",
       "mobile": "9999999999",
       "password": "shraddha"
+    },
+    {
+      "fullname": "deepali",
+      "email": "deepali@gmail.com",
+      "password": "12345",
+      "mobile": "8888888888",
+      "id": 6
+    },
+    {
+      "fullname": "deepali",
+      "email": "deepali@gmail.com",
+      "password": "12345",
+      "mobile": "8888888888",
+      "id": 7
     }
   ],
   "profile": {

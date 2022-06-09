@@ -47,50 +47,86 @@
       "email": "hiral@gmail.com",
       "mobile": "9876543210",
       "salary": "90000"
+    },
+    {
+      "id": 12,
+      "firstName": "mira",
+      "lastName": "kapoor",
+      "email": "m@gmail.com",
+      "mobile": "7456985698",
+      "salary": "2400"
     }
   ],
   "signupUsers": [
     {
-      "fullname": "shraddha gediya",
-      "email": "s@gmail.com",
-      "password": "admin",
-      "mobile": "9999999999",
-      "id": 1
-    },
-    {
-      "id": 2,
       "fullname": "bhumi",
       "email": "bhumi@gmail.com",
-      "mobile": "5555555555",
-      "password": "bhumi"
+      "password": "bhumi",
+      "mobile": "1234567890",
+      "id": 2
     },
     {
-      "fullname": "ronak",
-      "email": "r@gmail.com",
-      "password": "123",
-      "mobile": "7412589632",
-      "id": 3
+      "fullname": "shraddha",
+      "email": "s@gmail.com",
+      "password": "1234",
+      "mobile": "1234567896",
+      "id": 4
     },
     {
-      "id": 5,
-      "fullname": "shraddha gediya",
-      "email": "s@gmai.com",
-      "mobile": "9999999999",
-      "password": "shraddha"
-    },
-    {
-      "fullname": "deepali",
-      "email": "deepali@gmail.com",
-      "password": "12345",
-      "mobile": "8888888888",
+      "fullname": "shreya",
+      "email": "shreya@gmail.com",
+      "password": "1234",
+      "mobile": "1234567890",
       "id": 6
     },
     {
-      "fullname": "deepali",
-      "email": "deepali@gmail.com",
+      "fullname": "mixi",
+      "email": "mixi@gmail.com",
+      "password": "1234",
+      "mobile": "1234567890",
+      "id": 8
+    },
+    {
+      "fullname": "sam",
+      "email": "sma@gmailcom",
+      "password": "1234",
+      "mobile": "1234567890",
+      "id": 10
+    },
+    {
+      "fullname": "er",
+      "email": "er@gmail.com",
+      "password": "1234",
+      "mobile": "1234567895",
+      "id": 12
+    },
+    {
+      "fullname": "sam",
+      "email": "sdasdasd",
+      "password": "1233",
+      "mobile": "123",
+      "id": 15
+    },
+    {
+      "fullname": "demo User1",
+      "email": "d@gmail.com",
+      "password": "1234",
+      "mobile": "1234567890",
+      "id": 16
+    },
+    {
+      "fullname": "fgh",
+      "email": "mixi@gmail.com",
+      "password": "1234",
+      "mobile": "547676456",
+      "id": 17
+    },
+    {
+      "fullname": "sh",
+      "email": "s@gmail.com",
+      "mobile": "1234567890",
       "password": "12345",
-      "mobile": "8888888888",
-      "id": 7
+      "id": 18
     }
   ],
   "profile": {

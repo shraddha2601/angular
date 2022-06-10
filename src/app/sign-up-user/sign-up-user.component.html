@@ -1,37 +1,40 @@
 <nav class="navbar navbar-light bg-primary">
     <div class="container-fluid">
-        <h1>Angular crud</h1>
+        <h4 class="mb-0 text-white">Sign up Users Detail</h4>
         <div class="d-flex">
           <!-- <button type="button" (click)="clickAddEmploye()" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Add Employee</button> -->
           <button routerLink="/login" class="btn btn-success">Logout</button>
         </div>
     </div>
 </nav>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Full Name</th>
-            <th>Email Id</th>
-            <th>Password</th>
-            <th>Mobile no.</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let row of signUpdata">
-            <td>{{row.id}}</td>
-            <td>{{row.fullname}}</td>
-            <td>{{row.email}}</td>
-            <td>{{row.password}}</td>
-            <td>{{row.mobile}}</td>
-            <td>
-                <button (click)="onEditUser(row)" class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                <button (click)="deleteUser(row)" class="btn btn-danger mx-3">Delete</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-responsive">
+
+  <table class="table">
+      <thead>
+          <tr>
+              <th>Id</th>
+              <th>Full Name</th>
+              <th>Email Id</th>
+              <th>Password</th>
+              <th>Mobile no.</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let row of signUpdata">
+              <td>{{row.id}}</td>
+              <td>{{row.fullname}}</td>
+              <td>{{row.email}}</td>
+              <td>{{row.password}}</td>
+              <td>{{row.mobile}}</td>
+              <td>
+                  <button (click)="onEditUser(row)" class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button (click)="deleteUser(row)" class="btn btn-danger mx-sm-3 mt-3 mt-md-0">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
 
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

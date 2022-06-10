@@ -59,11 +59,11 @@
   ],
   "signupUsers": [
     {
+      "id": 2,
       "fullname": "bhumi",
       "email": "bhumi@gmail.com",
-      "password": "bhumi",
       "mobile": "1234567890",
-      "id": 2
+      "password": "bhumi"
     },
     {
       "fullname": "shraddha",

@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { SignUpUserComponent } from './sign-up-user/sign-up-user.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component'
 
 const routes: Routes = [
   {path : ' ', redirectTo: 'login', pathMatch : 'full'}, 
@@ -14,6 +16,9 @@ const routes: Routes = [
   {path : 'dashboard', component: EmployeeDashboardComponent},
   {path : 'signuplist', component: SignUpUserComponent},
   {path : 'homePage', component: HomePageComponent},
+  {path : 'addEmployee', component: AddEmployeeComponent},
+  {path : 'editEmployee', component: EditEmployeeComponent},
+
 ]
 
 @NgModule({

@@ -1,0 +1,44 @@
+<button type="button" (click)="clickAddEmploye()" data-toggle="modal" data-target="#exampleModal" class="btn btn-success mx-2">Add Employee</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Employee Detail</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup] = "formValue">
+                <div class="form-group">
+                  <label for="first_name">First Name</label>
+                  <input type="text" formControlName="firstName" class="form-control" id="first_name">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" formControlName="lastName" class="form-control" id="last_name">
+                </div>
+                <div class="form-group">
+                    <label for="email_id">Email Id</label>
+                    <input type="email" formControlName="email" class="form-control" id="email_id">
+                </div>
+                <div class="form-group">
+                    <label for="mobile_no">Mobile Number</label>
+                    <input type="text" formControlName="mobile" class="form-control" id="mobile_no">
+                </div>
+                <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input type="text" formControlName="salary" class="form-control" id="salary">
+                </div>
+                
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" *ngIf="showAdd" (click)="postEmployeeDetails()" class="btn btn-primary">Add</button>
+          <button type="button" *ngIf="showUpdate" (click)="updateEmployeeDetails()" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

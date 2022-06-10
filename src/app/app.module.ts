@@ -16,6 +16,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { Ng2OrderModule } from 'ng2-order-pipe';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { Ng2OrderModule } from 'ng2-order-pipe';
     SignUpUserComponent,
     HeaderComponent,
     HomePageComponent,
-    HeaderComponent
+    HeaderComponent,
+    AddEmployeeComponent,
+    EditEmployeeComponent
   ],
   imports: [
     BrowserModule,

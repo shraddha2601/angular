@@ -1,0 +1,14 @@
+.card-design .card-title{color:#1f4167;font-size: 18px;font-weight: lighter;letter-spacing: 2px;text-transform: uppercase;}
+.card-design .name{text-transform: capitalize;}
+.card-design .main-img-div{position: sticky;top: 0;}
+
+/* main-section css start */
+.main-section{position: relative;}
+.main-section .main-img-div{height: 95vh;width: 100%;}
+.main-section .main-img-div::after{position: absolute;content: '';background: black;opacity: 0.6;height: 100%;top: 0;width: 100%;left: 0;}
+.main-section .content{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);color: #fff;}
+.main-section .main-img-div .main-img{object-fit: cover;height: 100%;width: 100%;}
+.main-section .content .title{font-size: 22px;}
+.main-section .content .sub-para{font-size: 18px;}
+.main-section .content .note{font-size: 18px;position: relative;display: inline-block;padding-bottom: 5px;border-bottom: 1px solid #fff;}
+/* main-section css end */

@@ -1,18 +1,21 @@
 <nav class="navbar navbar-light bg-primary">
     <div class="container-fluid">
-        <h1>Angular crud</h1>
+        <h4 class="mb-0 text-white">Employee Dashboard</h4>
         <div class="d-flex">
-          <button type="button" (click)="clickAddEmploye()" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Add Employee</button>
+          <button type="button" (click)="clickAddEmploye()" data-toggle="modal" data-target="#exampleModal" class="btn btn-success mx-2">Add Employee</button>
           <button routerLink="/login" class="btn btn-success">Logout</button>
         </div>
     </div>
 </nav>
-<input class="form-control" type="text" name="firstName" [(ngModel)]="firstName" autocomplete="off" (ngModelChange)="search()" placeholder="Start searching for a employee by Emloyee name">
+<div class="container-fluid">
+
+  <input class="form-control my-3" type="text" name="firstName" [(ngModel)]="firstName" autocomplete="off" (ngModelChange)="search()" placeholder="Start searching for a employee by Emloyee name">
+</div>
 <table class="table">
     <thead>
         <tr>
-            <th (click)="sort('id')">Employee Id <i class="fa-solid fa-sort"></i></th>
-            <th (click)="sort('firstName')">First Name <i class="fa-solid fa-sort"></i></th>
+            <th (click)="sort('id')">Employee Id <i class="fa-solid fa-sort ml-2"></i></th>
+            <th (click)="sort('firstName')">First Name <i class="fa-solid fa-sort ml-2"></i></th>
             <th>Last Name</th>
             <th>Email Id</th>
             <th>Mobile no.</th>
@@ -39,7 +42,7 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -80,4 +83,4 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->

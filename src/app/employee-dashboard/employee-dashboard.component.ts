@@ -10,13 +10,9 @@ import { EmployeeModel } from './employee-dashboard.model';
 })
 export class EmployeeDashboardComponent implements OnInit {
 
-  // searchText : any;
   firstName : any;
   p: number= 1;
 
-  // data: Array<any>
-  // totalRecords : any
-  // page : Number = 1
 
   formValue !: FormGroup;
   employeeModelObj : EmployeeModel = new EmployeeModel();
@@ -25,7 +21,6 @@ export class EmployeeDashboardComponent implements OnInit {
   showUpdate !: boolean;
   constructor(private formbuilder: FormBuilder,
   private api : ApiService) { 
-    // this.data = new Array<any>();
 
   }
 
@@ -72,7 +67,6 @@ export class EmployeeDashboardComponent implements OnInit {
     this.api.getEmploye()
     .subscribe(res=>{
       this.employeeData = res;
-      // this.totalRecords = res.lenght;
     })
   }
   deleteEmployee(row : any){

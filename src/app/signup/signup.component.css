@@ -40,3 +40,7 @@
   }
   
   .signup-page .login-link{color: #1b2e35;margin-top: 15px;display: inline-block;}
+
+  @media(max-width:991px){
+    .sign-up-bg::after{width: 100%;}
+  }

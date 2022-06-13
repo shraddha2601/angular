@@ -17,7 +17,7 @@ const routes: Routes = [
   {path : 'signuplist', component: SignUpUserComponent},
   {path : 'homePage', component: HomePageComponent},
   {path : 'addEmployee', component: AddEmployeeComponent},
-  {path : 'editEmployee', component: EditEmployeeComponent},
+  {path : 'editEmployee/:id', component: EditEmployeeComponent},
 
 ]
 

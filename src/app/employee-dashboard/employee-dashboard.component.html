@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <h4 class="mb-0 text-white">Employee Dashboard</h4>
         <div class="d-flex">
-          <button type="button" (click)="clickAddEmploye()" data-toggle="modal" data-target="#exampleModal" class="btn btn-success mx-2">Add Employee</button>
+          <!-- <button type="button" (click)="clickAddEmploye()" data-toggle="modal" data-target="#exampleModal" class="btn btn-success mx-2">Add Employee</button> -->
           <button routerLink="/login" class="btn btn-success">Logout</button>
         </div>
     </div>
@@ -32,13 +32,15 @@
             <td>{{row.mobile}}</td>
             <td>{{row.salary}}</td>
             <td>
-                <button (click)="onEdit(row)" class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Edit</button>
+              <!-- <a routerLink="/editEmployee">Edit</a> -->
+                <button (click)="onEdit(row)" routerLink="/editEmployee/{{row.id}}" class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Edit</button>
                 <button (click)="deleteEmployee(row)" class="btn btn-danger mx-3">Delete</button>
             </td>
         </tr>
     </tbody>
     <pagination-controls (pageChange) = "p = $event"></pagination-controls>
 </table>
+<router-outlet></router-outlet>
 
 
   <!-- Modal -->

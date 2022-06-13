@@ -1,28 +1,20 @@
 {
   "posts": [
     {
-      "id": 6,
-      "firstName": "bhumi",
-      "lastName": "chauhan",
-      "email": "b@gmail.com",
-      "mobile": "8521478521",
-      "salary": "1200"
-    },
-    {
-      "id": 7,
       "firstName": "shraddha",
       "lastName": "gediya",
       "email": "s@gmail.com",
       "mobile": "3698521470",
-      "salary": "100"
+      "salary": "1000",
+      "id": 7
     },
     {
-      "id": 8,
       "firstName": "jinal",
       "lastName": "mistry",
       "email": "jinal@gmail.com",
       "mobile": "85236985",
-      "salary": "25000"
+      "salary": "2500",
+      "id": 8
     },
     {
       "id": 9,
@@ -47,14 +39,6 @@
       "email": "hiral@gmail.com",
       "mobile": "9876543210",
       "salary": "90000"
-    },
-    {
-      "id": 12,
-      "firstName": "mira",
-      "lastName": "kapoor",
-      "email": "m@gmail.com",
-      "mobile": "7456985698",
-      "salary": "2400"
     }
   ],
   "signupUsers": [

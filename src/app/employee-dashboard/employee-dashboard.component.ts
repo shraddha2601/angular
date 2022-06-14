@@ -16,11 +16,11 @@ export class EmployeeDashboardComponent implements OnInit {
 
   formValue !: FormGroup;
   employeeModelObj : EmployeeModel = new EmployeeModel();
-  employeeData !: any;  
+  employeeData !: any;
   showAdd !: boolean;
   showUpdate !: boolean;
   constructor(private formbuilder: FormBuilder,
-  private api : ApiService) { 
+  private api : ApiService) {
 
   }
 
@@ -115,7 +115,7 @@ export class EmployeeDashboardComponent implements OnInit {
     }
   }
 
-  
+
 
   key : string = "id";
   reverse : boolean = false ;

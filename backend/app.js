@@ -1,15 +1,23 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
-
-app.use((req, res, next) => {
-  console.log("First Middleware");
-  next();
-})
+app.use(bodyParser.json);
+app.use(bodyParser.urlencoded({ extended : false}));
 
 
-app.use((req, res, next) => {
-  res.send('Hello From Express')
+app.use('/api/posts',(req, res, next) => {
+  const posts = [
+    {id : 'id1' , title : " First server side post" ,content : "This is comefrom server"},
+    {id : 'id2' , title : " second server side post" ,content : "This is comefrom server"}
+
+  ];
+  res.status(200).json({
+    message : 'Post Fetched Succesfully in angular task project',
+    posts : posts
+  });
+
+
 })
 
 
